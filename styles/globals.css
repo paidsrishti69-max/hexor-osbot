@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#05060a;
+  --card:#0b1220;
+  --muted:#9aa6c1;
+  --blue:#2b7cff;
+}
+
+html,body,#__next{height:100%;}
+body{
+  background: radial-gradient(ellipse at top left, rgba(30,40,60,0.02), transparent 20%), var(--bg);
+  color:#cbd5e1;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.container{max-width:1100px;margin:0 auto;padding:28px;}
+.header-title{font-weight:800;color:transparent;-webkit-text-stroke:1px rgba(43,124,255,0.3);text-shadow:0 0 14px rgba(43,124,255,0.08);font-size:28px;}
+.card{background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);border-radius:10px;padding:18px;}
+.small-muted{color:var(--muted);font-size:13px}
+.search-input{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px 14px;border-radius:6px;color:#cbd5e1;width:100%}
+.record-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00)); border:1px solid rgba(255,255,255,0.03); padding:16px; border-radius:8px}
